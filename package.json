@@ -1,8 +1,7 @@
 {
-  "name": "check",
+  "name": "check-env-cli",
   "version": "0.0.1",
-  "description": "Check CLI",
-  "main": "index.js",
+  "description": "Environment variables checker (CLI)",
   "scripts": {
     "build": "tsc",
     "test": "NODE_ENV=test ts-node ./bin/check.ts NODE_ENV=test && echo 'Test OK' || echo 'Test failed' ",
