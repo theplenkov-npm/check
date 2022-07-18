@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "test": "NODE_ENV=test ts-node ./bin/check.ts NODE_ENV=test && echo 'Test OK' || echo 'Test failed' "
+    "test": "NODE_ENV=test ts-node ./bin/check.ts NODE_ENV=test && echo 'Test OK' || echo 'Test failed' ",
+    "postversion": "git push --follow-tags"
   },
   "repository": {
     "type": "git",
