@@ -21,10 +21,9 @@ For the mentioned above problem now my code looks like this:
 ```
 
 So as you see it's a very minimalistic implementation without complicated conditions or OS-dependent if statements but allowing to use any environment variable.
-
-You can also wrap it to another script for reusability:
+You can also wrap it to another script for reusability. Another trick is to use it via npx - thus you won't need to declare this module as a global depenendcy for your package.
 
 ```
-"is-prod":"check NODE_ENV=production",
-"prepare":"is-prod || husky install"
+    "prepare": "npm run is-prod || husky install",
+    "is-prod": "npx -y check-env-cli NODE_ENV=production"
 ```
