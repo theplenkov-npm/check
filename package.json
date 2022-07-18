@@ -1,0 +1,26 @@
+{
+  "name": "check",
+  "version": "1.0.0",
+  "description": "Check CLI",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "NODE_ENV=test ts-node ./bin/check.ts NODE_ENV=test && echo 'Test OK' || echo 'Test failed' "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theplenkov-npm/check.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theplenkov-npm/check/issues"
+  },
+  "homepage": "https://github.com/theplenkov-npm/check#readme",
+  "bin": {
+    "check": "./bin/check.js"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1"
+  }
+}
