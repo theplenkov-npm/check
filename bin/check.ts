@@ -1,4 +1,4 @@
-#!/usr/bin/node
+#!/usr/bin/env node
 
 import { argv, env, exit } from "node:process";
 import assert from "node:assert";
