@@ -10,7 +10,7 @@ and I wanted to run it only during non-production install ( because husky was a 
 
 So then I thought - it would be nice to check environment variable NODE_ENV which is prefilled with production value in case of using --production flag for npm install
 
-Then I decided to solve this task in a generig way with this module
+Then I decided to solve this task in a generiс way with this module
 
 ## Usage
 
